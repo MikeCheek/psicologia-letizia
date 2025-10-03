@@ -19,24 +19,18 @@ const Footer = () => {
           <div className="text-white text-left flex flex-col gap-2 max-w-[35vw]">
             <p className="text-sm">
               Telefono:{' '}
-              <a href={`tel:${phoneNumber}`} className="text-sm underline hover:opacity-80">
+              <a href={`tel:${phoneNumber}`} className="text-sm underline hover:opacity-80" title="Chiama ora">
                 {phoneNumber}
               </a>
             </p>
             <p className="text-sm">
               Email:{' '}
-              <a href={`mailto:${email}`} className="text-sm underline hover:opacity-80">{email}</a>
+              <a href={`mailto:${email}`} className="text-sm underline hover:opacity-80" title="Scrivimi una email">
+                {email}
+              </a>
             </p>
             <p className="text-sm">
-              Dove ricevo:{' '}
-              <a
-                href="https://www.google.com/maps?q=Piazza+Cavour,+14,+Palazzo+Porto+Sollima,+Catania"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:opacity-80"
-              >
-                Piazza Cavour, 14, Palazzo Porto Sollima, Catania
-              </a>
+              Dove ricevo: Piazza Cavour, 14, Palazzo Porto Sollima, Catania
             </p>
           </div>
 
