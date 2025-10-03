@@ -46,7 +46,8 @@ const steps = [
 
 const Approach: React.FC = () => (
   <Section id="approccio">
-    <h3 className="text-3xl font-bold mb-4 text-purple">Il mio approccio</h3>
+    <h3 className="text-2xl md:text-4xl font-bold mb-12 text-purple uppercase">
+      Il mio approccio</h3>
     <div className="relative flex flex-col lg:flex-row-reverse gap-20 items-center">
       <StaticImage
         src="../../images/studio-2.jpg"

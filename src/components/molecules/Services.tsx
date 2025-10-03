@@ -133,7 +133,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description, 
         {image}
       </div>
       <div className="flex flex-col gap-4 w-full md:w-[50vw] self-start">
-        <h4 className="rounded-lg font-bold text-xl md:text-3xl text-lightBlue text-center md:text-left uppercase">
+        <h4 className="rounded-lg font-bold text-xl md:text-2xl text-lightBlue text-center md:text-left uppercase">
           {title}
         </h4>
         <p className={`relative text-base text-left ${description2 ? 'mb-4' : 'mb-8'}`}>
@@ -153,7 +153,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description, 
 const Services = () => {
   return (
     <Section id="servizi">
-      <h3 className="text-3xl font-bold mb-12 text-purple">
+      <h3 className="text-2xl md:text-4xl font-bold mb-12 text-purple uppercase">
         Servizi
       </h3>
       <div className="flex w-full gap-20 flex-col items-center justify-center">

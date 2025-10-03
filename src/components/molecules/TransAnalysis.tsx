@@ -50,7 +50,8 @@ const TransAnalysis = () => {
 
   return (
     <Section id="analisitransazionale">
-      <h3 className="text-3xl font-bold mb-4 text-purple text-center">Analisi Transazionale</h3>
+      <h3 className="text-2xl md:text-4xl font-bold mb-12 text-purple uppercase">
+        Analisi Transazionale</h3>
       <div className="w-full flex flex-row flex-wrap items-center justify-center gap-12">
         {info.map((card, idx) => (
           <div

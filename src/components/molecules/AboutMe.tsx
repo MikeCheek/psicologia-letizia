@@ -6,7 +6,8 @@ import Section from '../organisms/Section'
 const AboutMe = () => {
   return (
     <Section id="sudime">
-      <h3 className="text-3xl font-bold mb-4 text-purple">Su di me</h3>
+      <h3 className="text-2xl md:text-4xl font-bold mb-12 text-purple uppercase">
+        Su di me</h3>
       <div className="w-full flex flex-col-reverse md:flex-row items-center justify-evenly gap-8">
         <div className="w-full md:w-[50%] flex flex-col justify-center text-center md:text-left">
           Sono Specialista Psicoterapeuta a indirizzo Analitico Transazionale.
