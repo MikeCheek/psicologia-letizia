@@ -7,6 +7,7 @@ import {
   Layers,
   ArrowUpRight,
 } from 'lucide-react'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const steps = [
   {
@@ -46,8 +47,16 @@ const steps = [
 const Approach: React.FC = () => (
   <Section id="approccio">
     <h3 className="text-3xl font-bold mb-4 text-purple">Il mio approccio</h3>
-    <div className="relative flex flex-col items-center">
-      <ul className="relative z-10 w-full max-w-md space-y-12">
+    <div className="relative flex flex-col lg:flex-row-reverse gap-20 items-center">
+      <StaticImage
+        src="../../images/studio-2.jpg"
+        alt="Studio 2"
+        placeholder="blurred"
+        layout="constrained"
+        className="h-[300px] w-[60vw] lg:w-[40vw] lg:h-[400px] rounded-lg"
+      // height={400}
+      />
+      <ul className="relative z-10 w-full lg:w-[30vw] max-w-md space-y-12">
         {steps.map(({ icon: Icon, text }, idx) => (
           <li key={idx} className="flex items-center space-x-4">
             <div className="flex-shrink-0 w-10 h-10 rounded-full bg-lightBlue flex items-center justify-center shadow-lg border-4 border-white">

@@ -9,19 +9,21 @@ const AboutMe = () => {
       <h3 className="text-3xl font-bold mb-4 text-purple">Su di me</h3>
       <div className="w-full flex flex-col-reverse md:flex-row items-center justify-evenly gap-8">
         <div className="w-full md:w-[50%] flex flex-col justify-center text-center md:text-left">
-          Sono Specialista Psicoterapeuta a Indirizzo Analitico Transazionale.
-          <br /><br />
-
-          Mi occupo di <Highlight>adolescenti, giovani adulti e adulti</Highlight>.
+          Sono Specialista Psicoterapeuta a indirizzo Analitico Transazionale.
+          <br />
           Mi dedico alla pratica psicoterapeutica e alla psicodiagnostica clinica.
           <br /><br />
 
-          Ho conseguito la Laurea Magistrale in Psicologia Clinica e l'abilitazione alla professione di Psicologo presso l'Università degli Studi di Padova.
-          Ho successivamente conseguito la Specializzazione in Psicoterapia presso la Scuola di Specializzazione Performat, facente parte dell'European Association Transactional Analysis (EATA).
+          Ho conseguito la laurea magistrale in Psicologia Clinica presso l'Università degli Studi di Padova e l'abilitazione alla professione di Psicologo nello stesso Ateneo.
           <br /><br />
 
-          Nel corso della mia formazione universitaria e specialistica ho frequentato i servizi di Psicologia ospedalieri e territoriali.
-          Ho esperienza nel trattamento dei <Highlight>disturbi dell'alcolismo</Highlight>, delle <Highlight>dipendenze patologiche</Highlight> e degli <Highlight>Psicologi Clinici Ospedalieri</Highlight>, maturando specifiche competenze nel trattamento della sofferenza psichica legata a condizioni mediche.
+          Ho poi conseguito la Specializzazione in Psicoterapia presso la Scuola di Specializzazione <Highlight>PerFormat</Highlight>, facente parte dell'<Highlight>European Association Transactional Analysis (EATA)</Highlight>.
+          <br /><br />
+
+          Nel corso della mia formazione universitaria e specialistica ho maturato significativa esperienza presso i <Highlight>Servizi di Psicologia ospedalieri e territoriali (ASL)</Highlight>, occupandomi di diversi ambiti di intervento nel campo della salute mentale.
+          <br /><br />
+
+          Ho lavorato presso l’Ospedale <Highlight>ARNAS Garibaldi</Highlight>, prestando servizio di consulenza specialistica nel trattamento dell'<Highlight>obesità</Highlight>, dei <Highlight>disturbi alimentari</Highlight> e della <Highlight>gestione di patologie croniche</Highlight>. Sempre in contesti clinico-ospedalieri, mi sono occupata di <Highlight>ricerca in Psicologia</Highlight>, coniugando la pratica clinica con l’interesse per la ricerca scientifica.
         </div>
         <StaticImage
           src="../../images/letizia-puglisi.png"

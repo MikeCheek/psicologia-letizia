@@ -6,9 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 type ServiceBlockProps = {
   title: string;
   description: JSX.Element;
-  description2?: JSX.Element;
   image: JSX.Element;
-  reversed?: boolean;
 };
 
 const services = [
@@ -30,12 +28,11 @@ const services = [
     </>,
     image: (
       <StaticImage
-        src="../../images/firstvisit.jpg"
+        src="../../images/placeholder.jpg"
         alt="Visita psicologica e consulenza"
+        className="max-h-[200px]"
         placeholder="blurred"
         layout="constrained"
-        width={300}
-        height={300}
       />
     ),
   },
@@ -44,16 +41,15 @@ const services = [
     description: <>
       Lo Studio offre un servizio di <Highlight>diagnosi e valutazione psicologica</Highlight> con <Highlight>finalità cliniche o medico-legali</Highlight>.
       Utilizzo un approccio clinico e strumentale per un'analisi approfondita, integrando la valutazione diagnostica con una profonda comprensione delle dinamiche cliniche.<br /><br />
-      <Highlight bigger>Cosa include il servizio?</Highlight><br />
+      <Highlight>Cosa include il servizio?</Highlight><br />
       Il processo psicodiagnostico si articola in diverse fasi, che possono includere:
       <ul>
         <li><Highlight>Colloquio clinico:</Highlight> analisi dettagliata della storia clinica, sintomi attuali e impatto sulla vita quotidiana.</li>
         <li><Highlight>Strumenti diagnostici:</Highlight> la somministrazione di test psicologici e psicometrici validati, che sono parte integrante del processo di valutazione. Questi strumenti supportano la diagnosi differenziale e offrono una misurazione oggettiva di specifici aspetti del funzionamento psicologico. L’accertamento testologico, unito al colloquio clinico, consente di ottenere un quadro diagnostico più preciso e completo.</li>
         <li><Highlight>Refertazione:</Highlight> rilascio di relazioni cliniche con restituzione degli esiti.</li>
       </ul>
-    </>,
-    description2: <>
-      <Highlight bigger>Aree di diagnosi e servizi offerti:</Highlight><br />
+      <br />
+      <Highlight>Aree di diagnosi e servizi offerti:</Highlight><br />
       A seconda delle specifiche esigenze, il servizio di valutazione e diagnosi include:
       <ul>
         <li><Highlight>Certificazioni di idoneità:</Highlight> rilascio di certificati psicologici per scopi specifici (es. porto d'armi, scuola, ecc.).</li>
@@ -68,12 +64,11 @@ const services = [
     </>,
     image: (
       <StaticImage
-        src="../../images/diagnostic.jpg"
+        src="../../images/placeholder.jpg"
         alt="Diagnostica clinica"
+        className="max-h-[200px]"
         placeholder="blurred"
         layout="constrained"
-        width={300}
-        height={300}
       />
     ),
   },
@@ -84,7 +79,7 @@ const services = [
       <br />
       L'approccio <Highlight>analitico transazionale</Highlight> consente di personalizzare l'intervento sulla base dei bisogni specifici di ciascuno e di impostare una terapia strutturata, in grado di intervenire sia sui <Highlight>sintomi</Highlight> che generano disagio, utilizzando tecniche cognitivo-comportamentali, sia sugli aspetti più profondi che ne sono la <Highlight>causa</Highlight>. L'obiettivo iniziale è il <Highlight>ripristino del benessere</Highlight>, per poi procedere all'individuazione e alla risoluzione dei conflitti interni che hanno originato il malessere, favorendo un cambiamento radicato.
       <br /><br />
-      <Highlight bigger>Come funziona la psicoterapia?</Highlight><br />
+      <Highlight>Come funziona la psicoterapia?</Highlight><br />
       Per avviare un piano di trattamento realmente personalizzato, la prima fase prevede un'<Highlight>accurata valutazione</Highlight> del tuo funzionamento, della tua storia e delle tue caratteristiche di personalità. Questo processo di indagine, che può includere l'utilizzo di reattivi psicodiagnostici, permette di raccogliere le informazioni necessarie per definire insieme gli obiettivi e il percorso più adatto a te.
       <br />
       Pur basando il mio intervento su linee guida ed <Highlight>evidenze consolidate</Highlight>, ogni percorso terapeutico è <Highlight>costruito su misura</Highlight> e tiene conto della tua storia, delle tue risorse e dei tuoi obiettivi. La terapia non è una soluzione standard, ma una collaborazione attiva tra paziente e terapeuta, basata su un'alleanza solida, dove tu sei partecipe del processo clinico.
@@ -92,9 +87,8 @@ const services = [
       Ritengo che la psicoterapia sia un'arte complessa che si nutre di due dimensioni essenziali: il rigore della scienza e la profondità della connessione umana. È l'incontro tra il <Highlight>metodo</Highlight>, che guida l'intervento, e la <Highlight>relazione terapeutica</Highlight>, che lo rende possibile.
       <br />
       Penso alla cura come alla combinazione tra sapere scientifico e umanità del rapporto, per accompagnarti a ritrovare <Highlight>consapevolezza</Highlight>, <Highlight>spontaneità</Highlight>, <Highlight>intimità</Highlight> e <Highlight>autonomia</Highlight>.
-    </>,
-    description2: <>
-      <Highlight bigger>Disturbi trattati</Highlight><br />
+      <br /><br />
+      <Highlight>Disturbi trattati</Highlight><br />
       Le mie aree principali di intervento includono:
       <ul>
         <li>Ansia e attacchi di panico</li>
@@ -110,42 +104,39 @@ const services = [
     </>,
     image: (
       <StaticImage
-        src="../../images/psicotherapy.jpg"
+        src="../../images/placeholder.jpg"
         alt="Psicoterapia"
+        className="max-h-[200px]"
         placeholder="blurred"
         layout="constrained"
-        width={300}
-        height={300}
       />
     ),
   },
 ];
 
-const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description, description2, reversed }) => {
-
-  const Book = <a href="#contatti" className="cta w-fit" title="Prenota una consulenza">
-    Prenota una consulenza
-  </a>
+const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description }) => {
+  const [opened, setOpened] = useState(false);
 
   return (
-    <div className={`${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} flex-col flex justify-between items-start gap-8 md:gap-16`}>
-      <div className="w-[200px] min-w-[200px] h-[200px] min-h-[200px] md:w-[300px] md:min-w-[300px] md:h-[300px] md:min-h-[300px] md:mt-12 bg-gray-200 rounded-full overflow-hidden flex items-center justify-center">
+    <div className="flex-1 flex flex-col justify-center items-center self-start w-full min-w-[30vw] max-w-[40vw] gap-4">
+      <div className="w-full h-[200px] bg-gray-200 rounded-lg flex items-center justify-center">
         {image}
       </div>
-      <div className="flex flex-col gap-4 w-full md:w-[50vw] self-start">
-        <h4 className="rounded-lg font-bold text-xl md:text-3xl text-lightBlue text-center md:text-left uppercase">
-          {title}
-        </h4>
-        <p className={`relative text-base text-left ${description2 ? 'mb-4' : 'mb-8'}`}>
-          {description}
-        </p>
-        {description2 ? (
-          <div className="mb-8 w-full md:w-[50vw]">
-            {description2}
-          </div>
-        ) : null}
-        {Book}
-      </div>
+      <h4 className="rounded-lg font-bold text-lg text-center">
+        {title}
+      </h4>
+      <p className={`relative text-base text-left overflow-hidden transition-[max-height] duration-300 ${opened ? 'max-h-[70vh] overflow-scroll' : 'max-h-40 overflow-hidden'} no-scrollbar
+      after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-16 after:bg-gradient-to-t after:from-white after:to-transparent after:transition-opacity after:duration-300 ${opened ? 'after:opacity-0' : 'after:opacity-100'}`}
+        onClick={() => setOpened(!opened)}
+      >
+        {description}
+      </p>
+      <button
+        className="text-sm w-fit ctaSecondary"
+        onClick={() => setOpened(!opened)}
+      >
+        {opened ? 'Mostra meno' : 'Leggi tutto'}
+      </button>
     </div>
   );
 }
@@ -156,9 +147,9 @@ const Services = () => {
       <h3 className="text-3xl font-bold mb-12 text-purple">
         Servizi
       </h3>
-      <div className="flex w-full gap-20 flex-col items-center justify-center">
+      <div className="flex w-full gap-12 flex-row flex-wrap items-center justify-center">
         {services.map((service, idx) => (
-          <ServiceBlock key={idx} reversed={idx % 2 === 1} title={service.title} image={service.image} description={service.description} description2={service.description2} />
+          <ServiceBlock key={idx} title={service.title} image={service.image} description={service.description} />
         ))}
       </div>
     </Section>

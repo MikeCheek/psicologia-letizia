@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Highlight = ({ children }: { children: string }) => {
+const Highlight = ({ children, bigger }: { children: string, bigger?: boolean }) => {
   return (
-    <strong className="text-purple contents">
+    <strong className={`contents ${bigger ? 'text-lg md:text-xl text-lightBlue' : 'text-purple'}`}>
       {children}
     </strong>
   )

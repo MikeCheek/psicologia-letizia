@@ -13,8 +13,8 @@ const NavBar = () => {
 
   return (
     <header className="w-full">
-      <nav className="w-full flex justify-between items-center bg-primary relative">
-        <a href="/">
+      <nav className="w-full flex h-20 justify-end md:justify-center items-center bg-primary relative">
+        {/* <a href="/">
           <StaticImage
             src="../../images/logo.png"
             alt="Logo"
@@ -23,9 +23,9 @@ const NavBar = () => {
             placeholder="blurred"
             className="w-auto m-2"
           />
-        </a>
+        </a> */}
         {/* Desktop Menu */}
-        <div className="hidden md:flex justify-between items-center gap-8 px-8">
+        <div className="hidden md:flex justify-between items-center gap-10 px-8">
           {Object.entries(sections).map(([key, value]) => (
             <NavItem key={key} href={key} value={value} />
           ))}

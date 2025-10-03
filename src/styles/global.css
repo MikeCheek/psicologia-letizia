@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* add the code bellow */ 
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+    .cta{
+      @apply text-secondary font-semibold py-3 px-6 rounded-lg border-2 border-secondary hover:bg-secondary hover:text-white hover:shadow-xl transition duration-300;
+    }
+    .ctaSecondary{
+      @apply text-secondary font-semibold py-3 px-6 underline;
+    }
+  }
+
+@layer base {
+  ul {
+    @apply list-disc pl-6;
+  }
+  li::marker{
+    @apply text-purple;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   background-color: theme('colors.white');
