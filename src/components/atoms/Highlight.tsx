@@ -2,10 +2,18 @@ import React from 'react'
 
 const Highlight = ({ children, bigger }: { children: string, bigger?: boolean }) => {
   return (
-    <strong className={`contents ${bigger ? 'text-lg md:text-xl text-lightBlue' : 'text-purple'}`}>
+    <strong className={`contents ${bigger ? 'text-lg md:text-xl text-lightBlue' : 'text-black'}`}>
       {children}
     </strong>
   )
 }
 
 export default Highlight
+
+// const Highlight = ({ children, bigger }: { children: string, bigger?: boolean }) => {
+//   return (
+//     <strong className={`contents ${bigger ? 'text-lg md:text-xl text-lightBlue' : 'text-purple'}`}>
+//       {children}
+//     </strong>
+//   )
+// }

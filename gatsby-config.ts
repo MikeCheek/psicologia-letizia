@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Psicologia Letizia Puglisi`,
     siteUrl: `https://www.psicologialetiziapuglisi.it`,
-    description: `Specialista Psicoterapeuta Analitico Transazionale per adolescenti, giovani adulti e adulti. Esperienza in psicoterapia, psicodiagnostica clinica e trattamento di dipendenze e sofferenza psichica correlata a condizioni mediche.`
+    description: `Psicoterapeuta Analitico Transazionale per adolescenti, giovani adulti e adulti. Esperta in psicoterapia, psicodiagnostica e trattamento di dipendenze.`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
