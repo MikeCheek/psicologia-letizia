@@ -34,8 +34,8 @@ const services = [
         alt="Visita psicologica e consulenza"
         placeholder="blurred"
         layout="constrained"
-        width={300}
-        height={300}
+        width={250}
+        height={250}
       />
     ),
   },
@@ -72,8 +72,8 @@ const services = [
         alt="Diagnostica clinica"
         placeholder="blurred"
         layout="constrained"
-        width={300}
-        height={300}
+        width={250}
+        height={250}
       />
     ),
   },
@@ -114,8 +114,8 @@ const services = [
         alt="Psicoterapia"
         placeholder="blurred"
         layout="constrained"
-        width={300}
-        height={300}
+        width={250}
+        height={250}
       />
     ),
   },
@@ -129,7 +129,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description, 
 
   return (
     <div className={`${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} flex-col flex justify-between items-start gap-8 md:gap-16`}>
-      <div className="w-[200px] min-w-[200px] h-[200px] min-h-[200px] md:w-[300px] md:min-w-[300px] md:h-[300px] md:min-h-[300px] md:mt-12 bg-gray-200 rounded-full overflow-hidden flex items-center justify-center">
+      <div className="w-[200px] min-w-[200px] h-[200px] min-h-[200px] md:w-[250px] md:min-w-[250px] md:h-[250px] md:min-h-[250px] md:mt-12 bg-gray-200 rounded-full overflow-hidden flex items-center justify-center">
         {image}
       </div>
       <div className="flex flex-col gap-4 w-full md:w-[50vw] self-start">
