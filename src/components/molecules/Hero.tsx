@@ -10,6 +10,7 @@ const Hero = () => {
           <StaticImage
             src="../../images/studio.jpg"
             alt="Studio"
+            quality={100}
             placeholder="blurred"
             layout="fullWidth"
             className="w-full h-screen object-cover brightness-[0.8]"
@@ -26,8 +27,9 @@ const Hero = () => {
           <h1 className="md:text-[4rem] text-[2rem] font-bold z-20 text-center">
             Studio di Psicologia Clinica
           </h1>
-          <h2 className="text-[1rem] md:text-[2rem] mt-4 z-20 text-center">
-            Dott.ssa Letizia Puglisi
+          <h2 className="text-[1.5rem] md:text-[3rem] mt-4 z-20 text-center">
+            Dott.ssa Letizia Puglisi <br />
+            Psicoterapeuta
           </h2>
         </div>
       </div>

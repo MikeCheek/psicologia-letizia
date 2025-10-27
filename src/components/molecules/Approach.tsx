@@ -14,7 +14,7 @@ const steps = [
     icon: Smile,
     text: (
       <>
-        <Highlight>Accoglienza</Highlight> e ascolto empatico della persona.
+        <Highlight>La persona al centro:</Highlight> accoglienza, attenzione e cura.
       </>
     ),
   },
@@ -22,7 +22,7 @@ const steps = [
     icon: UserPlus,
     text: (
       <>
-        Percorso personalizzato basato sulle <Highlight>esigenze individuali</Highlight>.
+        <Highlight>Intervento clinico specialistico</Highlight> e personalizzato.
       </>
     ),
   },
@@ -30,7 +30,7 @@ const steps = [
     icon: Layers,
     text: (
       <>
-        Utilizzo di <Highlight>tecniche integrate</Highlight> per il benessere psicologico.
+        <Highlight>Utilizzo di tecniche integrate</Highlight> per l'efficacia clinica.
       </>
     ),
   },
@@ -38,7 +38,7 @@ const steps = [
     icon: ArrowUpRight,
     text: (
       <>
-        Promozione dell'<Highlight>autonomia</Highlight> e della crescita personale.
+        <Highlight>Promozione dell'autonomia</Highlight> e del cambiamento.
       </>
     ),
   },
@@ -51,6 +51,7 @@ const Approach: React.FC = () => (
     <div className="relative flex flex-col lg:flex-row-reverse gap-20 items-center">
       <StaticImage
         src="../../images/studio-2.jpg"
+        quality={100}
         alt="Studio 2"
         placeholder="blurred"
         layout="constrained"

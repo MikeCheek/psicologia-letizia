@@ -18,7 +18,7 @@ const TransAnalysis = () => {
       title: "Schemi e Giochi Psicologici",
       content: (
         <>
-          La terapia analitico transazionale offre strumenti potenti e concreti per svelare i motivi dietro i nostri schemi, imparando a gestirli e a superarli. A volte, senza volerlo, si cade in <Highlight>giochi psicologici</Highlight>, ovvero <Highlight>schemi relazionali</Highlight> che continuano a ripetersi sempre nello stesso modo e che nascondono un secondo fine, portando a esiti insoddisfacenti. La terapia aiuta a riconoscere questi schemi e a riprendere il controllo, consentendo di riscrivere la storia della propria vita in modo più libero e consapevole.
+          La terapia analitico transazionale offre strumenti potenti e concreti per comprendere i meccanismi che generano i propri comportamenti. A volte, senza volerlo, si cade in <Highlight>giochi psicologici</Highlight>, ovvero <Highlight>schemi relazionali</Highlight> che continuano a ripetersi sempre nello stesso modo, portando a esiti insoddisfacenti. La terapia consente di riconoscere questi schemi e di riprendere il controllo, in modo più libero e consapevole.
         </>
       ),
     },
@@ -26,7 +26,7 @@ const TransAnalysis = () => {
       title: "Il Lavoro Terapeutico",
       content: (
         <>
-          Sul ponte che si crea tra il mondo interno e quello esterno si inserisce il lavoro terapeutico, che mira a comprendere il passato della persona e a ricostruire ciò che fa parte del suo presente. Il percorso di terapia consente di scoprire le proprie risorse interne e di comprendere i meccanismi che generano i propri comportamenti, in cerca di un nuovo livello di consapevolezza.
+          Sul ponte che si crea tra il mondo interno (o intrapsichico) e quello esterno si inserisce il lavoro terapeutico, che mira a comprendere il passato della persona e a ricostruire ciò che fa parte del suo presente.
         </>
       ),
     },
@@ -34,7 +34,7 @@ const TransAnalysis = () => {
       title: "Contrattualità e Obiettivi",
       content: (
         <>
-          La metodologia terapeutica dell’Analisi Transazionale si fonda sulla contrattualità: la relazione terapeutica è vista come un accordo tra terapeuta e paziente, i quali hanno una responsabilità congiunta nel lavorare per raggiungere <Highlight>obiettivi di terapia</Highlight> chiari e specifici.
+          La metodologia terapeutica dell’Analisi Transazionale si fonda sulla <Highlight>contrattualità</Highlight>: la relazione terapeutica è vista come un accordo in cui specialista e paziente hanno una <Highlight>responsabilità congiunta</Highlight> nel raggiungere <Highlight>obiettivi di terapia chiari</Highlight>.
         </>
       ),
     },
@@ -42,7 +42,7 @@ const TransAnalysis = () => {
       title: "Un Approccio Flessibile",
       content: (
         <>
-          Il punto di forza di questo approccio terapeutico risiede nella possibilità di agire su tutti i domini del funzionamento psichico: cognitivo, comportamentale, affettivo e relazionale, adattandosi in maniera flessibile a seconda delle caratteristiche del paziente e del suo problema. Questo consente di effettuare una terapia mirata, finalizzata alla <Highlight>remissione dei sintomi</Highlight> o a un cambiamento comportamentale, oppure di curare gli aspetti più profondi e intrapsichici attraverso una <Highlight>ristrutturazione</Highlight> del proprio modo di <Highlight>sentire, agire e pensare</Highlight>.
+          Questo approccio terapeutico agisce, su tutti i domini del funzionamento psichico: cognitivo, comportamentale, affettivo e relazionale, adattandosi in maniera flessibile a seconda delle caratteristiche del paziente e del suo problema. Questo consente di effettuare una terapia mirata, finalizzata alla <Highlight>remissione dei sintomi</Highlight>, ma anche di curare gli aspetti più profondi e intrapsichici attraverso una <Highlight>ristrutturazione</Highlight> del proprio modo di <Highlight>sentire, agire e pensare</Highlight>.
         </>
       ),
     },

@@ -11,25 +11,25 @@ const Footer = () => {
         <h3 className="text-2xl md:text-3xl font-semibold mb-12 text-center text-white">Contatti</h3>
         <div className="w-full max-w-[80%] mx-auto px-4 flex flex-col md:flex-row justify-evenly items-start md:items-center gap-4">
           <div className="text-white text-left gap-2 flex flex-col">
-            <p className="text-sm">Dott.ssa Letizia Puglisi</p>
-            <p className="text-sm">Psicologo Specialista in Psicoterapia</p>
-            <p className="text-xs">N. Iscrizione Albo 10702</p>
-            <p className="text-sm">Partita IVA: 06074890879</p>
+            <p className="italic font-bold">Dott.ssa Letizia Puglisi</p>
+            <p className="italic">Psicologo Specialista in Psicoterapia</p>
+            <p className="italic">N. Iscrizione Albo 10702</p>
+            <p className="">Partita IVA: 06074890879</p>
           </div>
           <div className="text-white text-left flex flex-col gap-2 max-w-[35vw]">
-            <p className="text-sm">
+            <p className="">
               Telefono:{' '}
-              <a href={`tel:${phoneNumber}`} className="text-sm underline hover:opacity-80" title="Chiama ora">
+              <a href={`tel:${phoneNumber}`} className="underline hover:opacity-80" title="Chiama ora">
                 {phoneNumber}
               </a>
             </p>
-            <p className="text-sm">
+            <p className="">
               Email:{' '}
-              <a href={`mailto:${email}`} className="text-sm underline hover:opacity-80" title="Scrivimi una email">
+              <a href={`mailto:${email}`} className="underline hover:opacity-80" title="Scrivimi una email">
                 {email}
               </a>
             </p>
-            <p className="text-sm">
+            <p className="">
               Dove ricevo: Piazza Cavour, 14, Palazzo Porto Sollima, Catania
             </p>
           </div>
