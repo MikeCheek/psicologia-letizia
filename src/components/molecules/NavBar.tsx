@@ -4,10 +4,10 @@ import NavItem from '../atoms/NavItem'
 
 const NavBar = () => {
   const sections = {
-    sudime: "Su di me",
-    servizi: "Servizi",
-    approccio: "Il mio approccio",
-    contatti: "Contatti"
+    sudime: { name: "Su di me", link: false },
+    servizi: { name: "Servizi", link: true },
+    approccio: { name: "Il mio approccio", link: false },
+    contatti: { name: "Contatti", link: false }
   }
   const [open, setOpen] = React.useState(false)
 
@@ -27,7 +27,7 @@ const NavBar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-between items-center gap-10 px-8">
           {Object.entries(sections).map(([key, value]) => (
-            <NavItem key={key} href={key} value={value} />
+            <NavItem key={key} href={key} value={value.name} link={value.link} />
           ))}
         </div>
         {/* Hamburger Icon */}
@@ -50,7 +50,8 @@ const NavBar = () => {
             <NavItem
               key={key}
               href={key}
-              value={value}
+              value={value.name}
+              link={value.link}
               onClick={() => setOpen(false)}
             />
           ))}

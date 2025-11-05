@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Highlight from '../atoms/Highlight'
 import Section from '../organisms/Section'
+import Book from '../atoms/Book'
 
 const AboutMe = () => {
   return (
@@ -33,12 +34,14 @@ const AboutMe = () => {
           alt="Dott.ssa Letizia Puglisi"
           className="mt-6 object-cover rounded-full shadow-xl"
           placeholder="blurred"
+          objectPosition="center"
           layout="fixed"
           quality={100}
           width={300}
           height={300}
         />
       </div>
+      <Book />
     </Section>
   )
 }

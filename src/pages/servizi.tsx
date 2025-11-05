@@ -5,26 +5,23 @@ import Footer from "../components/molecules/Footer"
 import Hero from "../components/molecules/Hero"
 import AboutMe from "../components/molecules/AboutMe"
 import { ParallaxProvider } from "react-scroll-parallax"
+import Services from "../components/molecules/Services"
 import Approach from "../components/molecules/Approach"
 import Seo from "../components/atoms/Seo"
 import TransAnalysis from "../components/molecules/TransAnalysis"
-import ShortServices from "../components/molecules/ShortServices"
 
-const IndexPage: React.FC<PageProps> = () => {
+const ServicesPage: React.FC<PageProps> = () => {
 
   return (<ParallaxProvider>
     <NavBar />
     <Hero />
-    <AboutMe />
-    <TransAnalysis />
-    <ShortServices />
-    <Approach />
+    <Services />
     <Footer />
   </ParallaxProvider>
   )
 }
 
-export default IndexPage
+export default ServicesPage
 
 export const Head = () => {
 

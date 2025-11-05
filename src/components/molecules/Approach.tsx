@@ -55,7 +55,7 @@ const Approach: React.FC = () => (
         alt="Studio 2"
         placeholder="blurred"
         layout="constrained"
-        className="h-[300px] w-[60vw] lg:w-[40vw] lg:h-[400px] rounded-lg"
+        className="h-[300px] lg:w-[40vw] lg:h-[400px] rounded-lg"
       // height={400}
       />
       <ul className="relative z-10 w-full lg:w-[30vw] max-w-md space-y-12">
