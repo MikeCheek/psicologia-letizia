@@ -1,10 +1,7 @@
-import { Facebook, Instagram, Youtube } from 'lucide-react'
 import React from 'react'
+import { email, phoneNumber } from '../../utilities/contacts'
 
 const Footer = () => {
-  const phoneNumber = "+39 3475777357"
-  const email = "studiopsicologiapuglisi@gmail.com"
-
   return (
     <footer className='w-full pt-36 pb-4 bg-lightBlue' id='contatti'>
       <div className='w-full max-w-6xl items-center mx-auto mb-8'>

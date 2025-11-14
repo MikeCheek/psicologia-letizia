@@ -8,7 +8,7 @@ const ShortServices: React.FC = () => {
     <Section id="servizi">
       <h3 className="text-2xl md:text-4xl font-bold mb-6 text-purple uppercase">Servizi</h3>
 
-      <div className="w-full max-w-4xl py-10 md:py-20">
+      <div className="w-full max-w-4xl py-10 md:py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           {services.map((s, i) => {
             const isLastSingle = i === services.length - 1 && services.length % 2 === 1
