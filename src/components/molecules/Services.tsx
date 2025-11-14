@@ -13,7 +13,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description, 
       </h3>
 
       {/* Image: mobile row 2, on md placed in the image column beside the description (row 2) */}
-      <div className={`row-start-2 md:row-start-2 ${reversed ? 'md:col-start-2' : 'md:col-start-1'} w-[200px] min-w-[200px] h-[200px] min-h-[200px] md:w-[250px] md:min-w-[250px] md:h-[250px] md:min-h-[250px] flex items-center justify-center justify-self-center md:self-start`}>
+      <div className={`row-start-2 md:row-start-2 ${reversed ? 'md:col-start-2' : 'md:col-start-1'} h-[200px] min-h-[200px] md:w-[250px] md:h-[250px] md:min-h-[250px] flex items-center justify-center justify-self-center md:self-start`}>
         {image}
       </div>
 
@@ -23,7 +23,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description, 
           {description}
         </p>
         {description2 ? (
-          <div className="mb-8 w-full md:w-[45vw]">
+          <div className="mb-8 w-full">
             {description2}
           </div>
         ) : null}
