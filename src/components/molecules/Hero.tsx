@@ -5,15 +5,15 @@ import { Parallax } from 'react-scroll-parallax'
 const Hero = ({ title }: { title?: string }) => {
   return (
     <main className="relative w-full flex items-center justify-center bg-primary text-white">
-      <div className="relative w-full h-screen flex items-center justify-center flex-col overflow-hidden">
-        <Parallax speed={-200} className="w-full h-screen">
+      <div className="relative w-full h-[90vh] md:h-screen flex items-center justify-center flex-col overflow-hidden">
+        <Parallax speed={-200} className="w-full h-[90vh] md:h-screen">
           <StaticImage
             src="../../images/studio.jpg"
             alt="Studio"
             quality={100}
             placeholder="blurred"
             layout="fullWidth"
-            className="w-full h-screen object-cover brightness-[0.8]"
+            className="w-full h-[90vh] md:h-screen object-cover brightness-[0.8]"
           />
 
           <div
