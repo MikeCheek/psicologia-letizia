@@ -16,7 +16,6 @@ const IndexPage: React.FC<PageProps> = () => {
     <NavBar />
     <Hero />
     <AboutMe />
-    <TransAnalysis />
     <ShortServices />
     <Approach />
     <Footer />

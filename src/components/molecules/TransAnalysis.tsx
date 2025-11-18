@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Highlight from '../atoms/Highlight'
 import Section from '../organisms/Section'
+import Book from '../atoms/Book'
 
 const TransAnalysis = () => {
 
@@ -59,7 +60,8 @@ const TransAnalysis = () => {
             className="bg-white shadow-lg rounded-lg p-6 w-full md:max-w-[45vw] lg:max-w-[30vw] flex flex-col gap-2"
           >
             <h4 className="text-xl font-semibold text-lightBlue mb-2">{card.title}</h4>
-            <div className="text-black text-base">{card.content}</div>
+            <div className="text-black text-base mb-8">{card.content}</div>
+            <Book />
           </div>
         ))}
       </div>

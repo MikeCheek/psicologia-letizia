@@ -2,7 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 
-const Hero = () => {
+const Hero = ({ title }: { title?: string }) => {
   return (
     <main className="relative w-full flex items-center justify-center bg-primary text-white">
       <div className="relative w-full h-screen flex items-center justify-center flex-col overflow-hidden">
@@ -25,7 +25,7 @@ const Hero = () => {
         </Parallax>
         <div className="absolute z-20 text-center" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
           <h1 className="md:text-[4rem] text-[2rem] font-bold z-20 text-center">
-            Studio di Psicologia Clinica
+            {title ?? "Studio di Psicologia Clinica"}
           </h1>
           <h2 className="text-[1.5rem] md:text-[3rem] mt-4 z-20 text-center">
             Dott.ssa Letizia Puglisi <br />

@@ -4,7 +4,8 @@ import NavItem from '../atoms/NavItem'
 
 const NavBar = () => {
   const sections = {
-    sudime: { name: "Su di me", link: false },
+    "": { name: "Home", link: true },
+    analisitransazionale: { name: "Analisi Transazionale", link: true },
     servizi: { name: "Servizi", link: true },
     approccio: { name: "Il mio approccio", link: false },
     contatti: { name: "Contatti", link: false }
