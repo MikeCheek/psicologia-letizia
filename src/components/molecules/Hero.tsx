@@ -23,8 +23,8 @@ const Hero = ({ title }: { title?: string }) => {
             }}
           />
         </Parallax>
-        <div className="absolute z-20 text-center" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-          <h1 className="md:text-[4rem] text-[2rem] font-bold z-20 text-center">
+        <div className="absolute z-20 text-center -mt-20 md:-mt-10" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+          <h1 className="md:text-[4rem] text-[3rem] font-bold z-20 text-center">
             {title ?? "Studio di Psicologia Clinica"}
           </h1>
           <h2 className="text-[1.5rem] md:text-[3rem] mt-4 z-20 text-center">
