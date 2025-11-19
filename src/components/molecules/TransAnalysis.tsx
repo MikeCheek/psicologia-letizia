@@ -1,4 +1,3 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Highlight from '../atoms/Highlight'
 import Section from '../organisms/Section'

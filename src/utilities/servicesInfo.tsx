@@ -34,6 +34,7 @@ const services = [
         alt="Visita psicologica e consultazione"
         placeholder="blurred"
         layout="constrained"
+        quality={100}
         width={200}
         height={200}
       />
@@ -71,6 +72,7 @@ const services = [
         alt="Diagnostica clinica"
         placeholder="blurred"
         layout="constrained"
+        quality={100}
         width={200}
         height={200}
       />
@@ -113,6 +115,7 @@ const services = [
         alt="Psicoterapia"
         placeholder="blurred"
         layout="constrained"
+        quality={100}
         width={200}
         height={200}
       />
