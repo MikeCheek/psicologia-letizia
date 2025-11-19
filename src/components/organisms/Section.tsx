@@ -31,13 +31,18 @@ const Section: React.FC<SectionProps> = ({
     const el = sectionRef.current;
     if (!el) return;
 
+    // determine if we're on a small viewport (mobile-like)
+    const isMobile =
+      typeof window !== "undefined" &&
+      (window.matchMedia ? window.matchMedia("(max-width: 768px)").matches : window.innerWidth <= 768);
+
     const r = el.getBoundingClientRect();
     const width = r.width;
     const height = r.height;
     setRect({ width, height });
     const count = Math.min(4, Math.floor(height / 150));
     const newShapes: ShapeItem[] = Array.from({ length: count }).map((_, i) => {
-      const size = Math.round(100 + Math.random() * 300); // 100-200px
+      const size = isMobile ? Math.round(50 + Math.random() * 150) : Math.round(100 + Math.random() * 300); // 100-200px
       const edgeChoices: Edge[] = ["left", "right"];
       const edge = edgeChoices[i % edgeChoices.length];
       const type: ShapeType = Math.random() < 0.33 ? "square" : Math.random() < 0.5 ? "triangle" : "circle";
