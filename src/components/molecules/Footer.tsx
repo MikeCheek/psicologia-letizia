@@ -14,31 +14,32 @@ const Footer = () => {
             <p className="italic">N. Iscrizione Albo 10702</p>
             <p className="">Partita IVA: 06074890879</p>
           </div>
-          <div className="text-white text-left flex flex-col gap-2 max-w-[35vw]">
-            <p className="">
-              Telefono:{' '}
-              <a href={`tel:${phoneNumber}`} className="underline hover:opacity-80" title="Chiama ora">
+          <div className="text-white text-left flex flex-col gap-2 md:max-w-[35vw]">
+            <span className="flex flex-row items-center flex-wrap gap-2 w-full">
+              <b>Telefono:</b>{' '}
+              <a href={`tel:${phoneNumber}`} className="underline hover:opacity-80 whitespace-nowrap" title="Chiama ora">
                 {phoneNumber}
-              </a>{' - '}
+              </a>{' -'}
               <a
                 href={`https://wa.me/${filteredNumber}`}
                 title="Contattami su WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className={`underline hover:opacity-80 whitespace-nowrap`}
+                className={`hover:opacity-80 w-fit inline-flex`}
               >
-                (Contattami su WhatsApp)
+                <MessageCircle size={20} className='mr-1' />
+                WhatsApp
               </a>
-            </p>
-            <p className="">
-              Email:{' '}
+            </span>
+            <span className="flex flex-row items-center gap-2">
+              <b>Email:</b>{' '}
               <a href={`mailto:${email}`} className="underline hover:opacity-80" title="Scrivimi una email">
                 {email}
               </a>
-            </p>
+            </span>
             <p className="">
-              Dove ricevo: Piazza Cavour, 14, Palazzo Porto Sollima, Catania
+              <b>Dove ricevo:</b> Piazza Cavour, 14, Palazzo Porto Sollima, Catania
             </p>
           </div>
 
