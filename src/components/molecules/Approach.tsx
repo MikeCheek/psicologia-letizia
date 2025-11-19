@@ -50,8 +50,7 @@ const Approach: React.FC = () => (
       Il mio approccio</h3>
     <div className="relative flex flex-col lg:flex-row-reverse gap-20 items-center">
       <StaticImage
-        src="../../images/studio-2.png"
-        quality={100}
+        src="../../images/foto-studio.jpg"
         alt="Studio 2"
         placeholder="blurred"
         layout="constrained"
