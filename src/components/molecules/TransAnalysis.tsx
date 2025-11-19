@@ -53,11 +53,12 @@ const TransAnalysis = () => {
     <Section id="analisitransazionale">
       <h3 className="text-2xl md:text-4xl font-bold mb-12 text-purple uppercase">
         Analisi Transazionale</h3>
-      <div className="w-full flex flex-row flex-wrap items-center justify-center gap-12">
+      <div className="w-full flex flex-row flex-wrap items-center justify-center gap-24">
         {info.map((card, idx) => (
           <div
             key={idx}
-            className="bg-white shadow-lg rounded-lg p-6 w-full md:max-w-[45vw] lg:max-w-[30vw] flex flex-col gap-2"
+            className={`bg-white shadow-lg rounded-lg p-6 w-full md:max-w-[45vw] lg:max-w-[30vw] flex flex-col gap-2 relative
+              after:content-[''] after:rounded-lg after:absolute after:rotate-3 after:shadow-lg after:opacity-70 after:shadow-lightBlue after:w-full after:h-full after:top-0 after:-z-10 after:right-0`}
           >
             <h4 className="text-xl font-semibold text-lightBlue mb-2">{card.title}</h4>
             <div className="text-black text-base mb-8">{card.content}</div>

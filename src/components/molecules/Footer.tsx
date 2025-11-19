@@ -1,5 +1,6 @@
 import React from 'react'
-import { email, phoneNumber } from '../../utilities/contacts'
+import { email, filteredNumber, phoneNumber } from '../../utilities/contacts'
+import { MessageCircle } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -18,6 +19,16 @@ const Footer = () => {
               Telefono:{' '}
               <a href={`tel:${phoneNumber}`} className="underline hover:opacity-80" title="Chiama ora">
                 {phoneNumber}
+              </a>{' - '}
+              <a
+                href={`https://wa.me/${filteredNumber}`}
+                title="Contattami su WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className={`underline hover:opacity-80 whitespace-nowrap`}
+              >
+                (Contattami su WhatsApp)
               </a>
             </p>
             <p className="">

@@ -1,13 +1,13 @@
 import { Mail, MessageCircle } from 'lucide-react';
 import React from 'react'
 import { useState } from 'react';
-import { email, phoneNumber } from '../../utilities/contacts'
+import { email, filteredNumber } from '../../utilities/contacts'
 
 const Book = () => {
   const [hovered, setHovered] = useState(false);
   const [supportsHover, setSupportsHover] = useState(false);
 
-  const filteredNumber = phoneNumber.replace(/\D/g, '');
+
 
   React.useEffect(() => {
     if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return;

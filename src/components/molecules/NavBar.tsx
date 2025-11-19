@@ -5,9 +5,9 @@ import NavItem from '../atoms/NavItem'
 const NavBar = () => {
   const sections = {
     "": { name: "Home", link: true },
+    approccio: { name: "Il mio approccio", link: false },
     analisitransazionale: { name: "Analisi Transazionale", link: true },
     servizi: { name: "Servizi", link: true },
-    approccio: { name: "Il mio approccio", link: false },
     contatti: { name: "Contatti", link: false }
   }
   const [open, setOpen] = React.useState(false)
