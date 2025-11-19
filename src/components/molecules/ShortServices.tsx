@@ -1,7 +1,6 @@
 import React from 'react'
 import Section from '../organisms/Section'
 import services from '../../utilities/servicesInfo'
-import Book from '../atoms/Book'
 
 const ShortServices: React.FC = () => {
   return (
@@ -16,6 +15,7 @@ const ShortServices: React.FC = () => {
               <a
                 key={s.title}
                 href={'/servizi#' + s.id}
+                title={`Vai alla pagina servizi — ${s.title}`}
                 className={`group block overflow-hidden shadow-lg hover:shadow-xl  rounded-lg p-6 transform transition-transform duration-200 hover:scale-105 hover:shadow-transparentLightBlue ${isLastSingle ? 'sm:col-span-2 md:col-span-1 sm:justify-self-center md:justify-self-auto' : ''}`}
                 aria-label={`Vai alla pagina servizi — ${s.title}`}
               >
