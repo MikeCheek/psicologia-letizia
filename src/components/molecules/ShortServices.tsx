@@ -16,7 +16,7 @@ const ShortServices: React.FC = () => {
                 key={s.title}
                 href={'/servizi#' + s.id}
                 title={`Vai alla pagina servizi — ${s.title}`}
-                className={`group block overflow-hidden shadow-lg hover:shadow-xl  rounded-lg p-6 transform transition-transform duration-200 hover:scale-105 hover:shadow-transparentLightBlue ${isLastSingle ? 'sm:col-span-2 md:col-span-1 sm:justify-self-center md:justify-self-auto' : ''}`}
+                className={`group block overflow-hidden shadow-lg hover:shadow-xl rounded-lg p-6 transition-transform duration-200 hover:scale-105 hover:shadow-transparentLightBlue ${isLastSingle ? 'sm:col-span-2 md:col-span-1 sm:justify-self-center md:justify-self-auto' : ''}`}
                 aria-label={`Vai alla pagina servizi — ${s.title}`}
               >
                 <div className="w-full">

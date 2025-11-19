@@ -94,19 +94,11 @@ const Section: React.FC<SectionProps> = ({
       ref={sectionRef}
       className="relative w-full min-h-[70vh] px-[10%] flex flex-col items-center justify-center text-black py-20 gap-12 overflow-hidden"
     >
-      {/* overlay placed relative to the section so shapes can extend half off the edges */}
+
+      {children}
+
       <div
-        aria-hidden="true"
-        className="pointer-events-none"
-        style={{
-          position: "absolute",
-          left: 0,
-          top: 0,
-          width: "100%",
-          height: "100%",
-          overflow: "visible",
-          zIndex: -10000,
-        }}
+        className="pointer-events-none absolute left-0 top-0 w-full h-full -z-[10000] opacity-80 md:opacity-100"
       >
         {shapes.map((s, i) => {
           const commonStyle: React.CSSProperties = {
@@ -121,6 +113,7 @@ const Section: React.FC<SectionProps> = ({
             willChange: "transform, opacity",
             userSelect: "none",
             pointerEvents: "none",
+            zIndex: -10000
           };
 
           if (s.type === "square") {
@@ -164,8 +157,6 @@ const Section: React.FC<SectionProps> = ({
           );
         })}
       </div>
-
-      {children}
     </section>
   );
 };

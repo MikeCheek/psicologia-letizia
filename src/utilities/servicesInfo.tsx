@@ -37,6 +37,7 @@ const services = [
         quality={100}
         width={200}
         height={200}
+        className="rounded-full"
       />
     ),
   },
@@ -75,6 +76,7 @@ const services = [
         quality={100}
         width={200}
         height={200}
+        className="rounded-full"
       />
     ),
   },
@@ -118,6 +120,7 @@ const services = [
         quality={100}
         width={200}
         height={200}
+        className="rounded-full"
       />
     ),
   },
