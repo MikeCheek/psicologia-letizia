@@ -8,16 +8,16 @@ const Hero = ({ title }: { title?: string }) => {
       <div className="relative w-full h-[90vh] md:h-screen flex items-center justify-center flex-col overflow-hidden">
         <Parallax speed={-200} className="w-full h-[90vh] md:h-screen">
           <StaticImage
-            src="../../images/studio.jpg"
+            src="../../images/studio/FOTO 8.jpg"
             alt="Studio"
             quality={100}
             placeholder="blurred"
             layout="fullWidth"
-            className="w-full h-[90vh] md:h-screen object-cover brightness-[0.8]"
+            className="w-full h-[90vh] md:h-screen object-cover"
           />
 
           <div
-            className="absolute left-0 top-0 w-full h-full z-10 pointer-events-none opacity-50"
+            className="absolute left-0 top-0 w-full h-full z-10 pointer-events-none opacity-30"
             style={{
               background: 'linear-gradient(to bottom, rgb(20 157 163), transparent 80%)',
             }}
