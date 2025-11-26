@@ -33,7 +33,7 @@ const Book = () => {
       onMouseEnter={supportsHover ? () => setHovered(true) : undefined}
       onMouseLeave={supportsHover ? () => setHovered(false) : undefined}
     >
-      <span className="inline-block p-3">
+      <span className="inline-block p-3 text-center">
         Prenota un appuntamento
       </span>
       <span

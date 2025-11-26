@@ -23,13 +23,13 @@ const Hero = ({ title }: { title?: string }) => {
             }}
           />
         </Parallax>
-        <div className="absolute z-20 text-center -mt-20 md:-mt-10" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-          <h1 className="md:text-[4rem] text-[3rem] font-bold z-20 text-center">
+        <div className="absolute z-20 text-center -mt-20 md:-mt-10 flex flex-col items-center justify-center h-full" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9)' }}>
+          <h1 className="md:text-[4rem] text-[3rem] font-bold z-20 text-center my-20">
             {title ?? "Studio di Psicologia Clinica"}
           </h1>
-          <h2 className="text-[1.5rem] md:text-[3rem] mt-4 z-20 text-center">
+          <h2 className="text-[1.5rem] md:text-[2.9rem] mt-4 z-20 text-center leading-tight font-serif italic">
             Dott.ssa Letizia Puglisi <br />
-            Psicoterapeuta
+            <span className='text-[1.3rem] md:text-[2.8rem]'>Psicoterapeuta</span>
           </h2>
         </div>
       </div>
