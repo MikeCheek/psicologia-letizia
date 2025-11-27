@@ -9,12 +9,24 @@ import Approach from "../components/molecules/Approach"
 import Seo from "../components/atoms/Seo"
 import TransAnalysis from "../components/molecules/TransAnalysis"
 import ShortServices from "../components/molecules/ShortServices"
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage: React.FC<PageProps> = () => {
 
+  const image = (
+    <StaticImage
+      src="../images/studio/FOTO 8.jpg"
+      alt="Studio"
+      quality={100}
+      placeholder="blurred"
+      layout="fullWidth"
+      className="w-full h-[90vh] md:h-screen object-cover"
+    />
+  )
+
   return (<ParallaxProvider>
     <NavBar />
-    <Hero />
+    <Hero image={image} />
     <AboutMe />
     <ShortServices />
     <Approach />

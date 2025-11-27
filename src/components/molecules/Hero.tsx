@@ -1,23 +1,16 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 
-const Hero = ({ title }: { title?: string }) => {
+const Hero = ({ title, image, darker = false }: { title?: string, image?: JSX.Element, darker?: boolean }) => {
+
   return (
     <main className="relative w-full flex items-center justify-center bg-primary text-white">
       <div className="relative w-full h-[90vh] md:h-screen flex items-center justify-center flex-col overflow-hidden">
         <Parallax speed={-200} className="w-full h-[90vh] md:h-screen">
-          <StaticImage
-            src="../../images/studio/FOTO 8.jpg"
-            alt="Studio"
-            quality={100}
-            placeholder="blurred"
-            layout="fullWidth"
-            className="w-full h-[90vh] md:h-screen object-cover"
-          />
+          {image}
 
           <div
-            className="absolute left-0 top-0 w-full h-full z-10 pointer-events-none opacity-30"
+            className={`absolute left-0 top-0 w-full h-full z-10 pointer-events-none ${darker ? 'opacity-40' : 'opacity-30'}`}
             style={{
               background: 'linear-gradient(to bottom, rgb(20 157 163), transparent 80%)',
             }}

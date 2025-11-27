@@ -17,7 +17,7 @@ const services = [
     description: <>
       La <Highlight>consultazione psicologica</Highlight> è il primo e fondamentale passo per affrontare un disagio emotivo, relazionale o personale.
       <br />
-      Attraverso una o più visite, dedicate all’ascolto e alla raccolta della storia clinica, potrai:
+      Attraverso una o più visite, dedicate all’ascolto e alla raccolta della storia clinica, è possibile:
       <ul>
         <li> Esplorare pensieri, emozioni e comportamenti </li>
         <li> Chiarire la natura del problema e, se necessario, avere un primo inquadramento diagnostico</li>
@@ -88,9 +88,9 @@ const services = [
       L'approccio <Highlight>analitico transazionale</Highlight> consente di personalizzare l'intervento sulla base dei bisogni specifici di ciascuno e di impostare una terapia strutturata, in grado di intervenire sia sui <Highlight>sintomi</Highlight> che generano disagio, utilizzando tecniche cognitivo-comportamentali, sia sugli aspetti più profondi che ne sono la <Highlight>causa</Highlight>. L'obiettivo è duplice: il <Highlight>ripristino del benessere</Highlight> e la successiva individuazione e risoluzione dei conflitti interni che hanno originato il malessere, favorendo un cambiamento radicato.
       <br /><br />
       <Highlight bigger h4>Come funziona la psicoterapia?</Highlight><br />
-      Per un piano di trattamento personalizzato, la fase iniziale prevede un'<Highlight>accurata valutazione</Highlight> del tuo funzionamento e della tua storia (che può includere l'utilizzo di reattivi psicodiagnostici). Questo processo di indagine definisce insieme gli <Highlight>obiettivi</Highlight> e il percorso più adatto a te.
+      Per un piano di trattamento personalizzato, la fase iniziale prevede un'<Highlight>accurata valutazione</Highlight> del funzionamento psicologico e della storia clinica della persona (che può includere l'impiego di reattivi psicodiagnostici). Questo processo di indagine consente di chiarire insieme gli <Highlight>obiettivi</Highlight> e delineare il percorso più indicato.
       <br />
-      Pur basando il mio intervento su linee guida ed <Highlight>evidenze consolidate</Highlight>, ogni <Highlight>percorso</Highlight> terapeutico è <Highlight>costruito su misura</Highlight> e tiene conto della tua storia, delle tue risorse e dei tuoi obiettivi. La terapia è una collaborazione attiva tra paziente e terapeuta, basata su un'alleanza solida, dove tu sei partecipe del processo clinico.
+      Pur basando il mio intervento su linee guida ed <Highlight>evidenze consolidate</Highlight>, ogni <Highlight>percorso</Highlight> terapeutico è <Highlight>costruito su misura</Highlight> e tiene conto della storia, delle risorse e degli obiettivi individuali. La terapia è una collaborazione attiva tra paziente e terapeuta, basata su un'alleanza solida, dove tu sei partecipe del processo clinico.
       <br />
       Ritengo che la <Highlight>psicoterapia</Highlight> sia un'arte complessa che si nutre di due dimensioni essenziali: il rigore della <Highlight>scienza</Highlight> e la profondità della <Highlight>connessione umana</Highlight>.
       <br />
@@ -106,6 +106,7 @@ const services = [
         <li>Depressione e difficoltà legate all'umore</li>
         <li>Disturbi alimentari</li>
         <li>Disturbi ossessivo-compulsivi</li>
+        <li>Disturbi di personalità</li>
         <li>Difficoltà relazionali e familiari</li>
         <li>Lutto e disturbi correlati</li>
         <li>Difficoltà legate alla salute fisica (es. patologie croniche)</li>

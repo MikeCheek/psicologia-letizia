@@ -6,12 +6,24 @@ import Hero from "../components/molecules/Hero"
 import { ParallaxProvider } from "react-scroll-parallax"
 import Services from "../components/molecules/Services"
 import Seo from "../components/atoms/Seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const ServicesPage: React.FC<PageProps> = () => {
 
+  const image = (
+    <StaticImage
+      src="../images/studio/FOTO 7.jpg"
+      alt="Studio"
+      quality={100}
+      placeholder="blurred"
+      layout="fullWidth"
+      className="w-full h-[90vh] md:h-screen object-cover"
+    />
+  )
+
   return (<ParallaxProvider>
     <NavBar />
-    <Hero title="Servizi" />
+    <Hero title="Servizi" image={image} />
     <Services />
     <Footer />
   </ParallaxProvider>
