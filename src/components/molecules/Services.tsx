@@ -19,13 +19,13 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description, 
 
       {/* Description & actions: mobile row 3, on md placed in the content column (row 2) next to the image */}
       <div className={`${reversed ? 'md:col-start-1' : 'md:col-start-2 justify-self-end'} row-start-3 md:row-start-2 flex flex-col gap-4 w-full md:w-[45vw] self-start items-center md:items-start`}>
-        <p className={`relative text-base text-left ${description2 ? 'mb-4' : 'mb-8'}`}>
+        <span className={`relative text-base text-left ${description2 ? 'mb-4' : 'mb-8'}`}>
           {description}
-        </p>
+        </span>
         {description2 ? (
-          <div className="mb-8 w-full">
+          <span className="mb-8 w-full">
             {description2}
-          </div>
+          </span>
         ) : null}
         <Book />
       </div>

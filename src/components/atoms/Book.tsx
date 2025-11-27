@@ -26,16 +26,14 @@ const Book = () => {
   }, []);
 
   return (
-    <a
-      href="#contatti"
-      title="Prenota una consulenza"
+    <span
       className="cta w-fit relative flex items-center gap-2 !py-0 !pr-0 font-semibold text-secondary rounded-lg border-2 border-secondary transition duration-300 hover:bg-secondary hover:text-white hover:shadow-xl"
       onMouseEnter={supportsHover ? () => setHovered(true) : undefined}
       onMouseLeave={supportsHover ? () => setHovered(false) : undefined}
     >
-      <span className="inline-block p-3 text-center">
+      <a title="Prenota una consulenza" href="#contatti" className="inline-block p-3 text-center">
         Prenota un appuntamento
-      </span>
+      </a>
       <span
         className={`inline-flex items-center ml-3 origin-left transform overflow-hidden transition-[max-width,opacity,transform] duration-300 ${(supportsHover && hovered) ? 'max-w-[96px] opacity-100 scale-100' : 'max-w-0 opacity-0 scale-0 pointer-events-none'}`}
       >
@@ -59,7 +57,7 @@ const Book = () => {
           <Mail size={20} />
         </a>
       </span>
-    </a>
+    </span>
   );
 }
 
