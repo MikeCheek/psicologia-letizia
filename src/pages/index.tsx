@@ -15,10 +15,12 @@ const IndexPage: React.FC<PageProps> = () => {
 
   const image = (
     <StaticImage
-      src="../images/studio/FOTO 8.jpg"
+      // src="../images/studio/FOTO 8.jpg"
+      src="../images/studio/FOTO 3.jpeg"
       alt="Studio"
       quality={100}
       placeholder="blurred"
+      objectPosition="bottom center"
       layout="fullWidth"
       className="w-full h-[90vh] md:h-screen object-cover"
     />

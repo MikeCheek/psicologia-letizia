@@ -7,11 +7,10 @@ const Footer = () => {
     <footer className='w-full pt-36 pb-4 bg-lightBlue' id='contatti'>
       <div className='w-full max-w-6xl items-center mx-auto mb-8'>
         <h3 className="text-2xl md:text-4xl font-bold mb-12 text-center text-white uppercase">Contatti</h3>
-        <div className="w-full max-w-[80%] mx-auto px-4 flex flex-col md:flex-row justify-evenly items-start md:items-center gap-4">
+        <div className="w-full text-lg max-w-[80%] mx-auto px-4 flex flex-col md:flex-row justify-evenly items-start md:items-center gap-4">
           <div className="text-white text-left gap-2 flex flex-col">
             <p className="italic font-bold">Dott.ssa Letizia Puglisi</p>
-            <p className="italic">Psicologo Specialista in Psicoterapia</p>
-            <p className="italic">N. Iscrizione Albo 10702</p>
+            <p className="italic">Ordine degli Psicologi n. 10702</p>
             <p className="">Partita IVA: 06074890879</p>
           </div>
           <div className="text-white text-left flex flex-col gap-2 md:max-w-[35vw]">
@@ -75,10 +74,10 @@ const Footer = () => {
       </div>
       <div className="w-full max-w-6xl mx-auto px-4 mt-24">
         <div className="text-center text-white">
-          <p className="text-sm">
+          <p className="text-base">
             © {new Date().getFullYear()} Dott.ssa Letizia Puglisi
           </p>
-          <p className="text-xs mt-2">
+          <p className="text-sm mt-2">
             Questo sito internet rispetta la linea guida nazionale del CNOP in materia di pubblicità sanitaria, secondo gli artt. 39-40 del Codice Deontologico degli Psicologi.
           </p>
         </div>

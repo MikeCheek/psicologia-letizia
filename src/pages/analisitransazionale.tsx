@@ -22,7 +22,7 @@ const AnalisiTransazionale = () => {
   return (
     <ParallaxProvider>
       <NavBar />
-      <Hero title="Analisi Transazionale" image={image} darker />
+      <Hero title="Analisi Transazionale" image={image} />
       <TransAnalysis />
       <Footer />
     </ParallaxProvider>
