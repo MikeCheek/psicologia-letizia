@@ -59,12 +59,12 @@ const TransAnalysis = () => {
           <TransAnalysisCard key={idx} title={card.title} content={card.content} />
         ))}
         <TransAnalysisCard
-          title="Prenota una consulenza"
+          title="Prenota un appuntamento"
           // noShadow
           content={
             <div className="flex flex-col items-center">
               <span className="text-black text-base mb-10">
-                Per prenotare una consulenza psicologica e scoprire in che modo l'Analisi Transazionale può supportarti nel tuo percorso di crescita personale, non esitare a contattarmi.
+                Per fissare una prima visita o richiedere informazioni, contatta la dottoressa.
               </span>
 
               <Book />

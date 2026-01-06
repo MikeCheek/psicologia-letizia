@@ -25,7 +25,7 @@ const ServicesPage: React.FC<PageProps> = () => {
 
   return (<ParallaxProvider>
     <NavBar />
-    <Hero title="Servizi" image={image} />
+    <Hero title="Servizi" image={image} darker />
     <Services />
     <Footer />
   </ParallaxProvider>

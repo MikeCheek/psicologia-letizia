@@ -28,7 +28,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (<ParallaxProvider>
     <NavBar />
-    <Hero image={image} />
+    <Hero image={image} darker />
     <AboutMe />
     <ShortServices />
     <Approach />

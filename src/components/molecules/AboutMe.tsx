@@ -14,19 +14,22 @@ const AboutMe = () => {
           Sono <Highlight>Specialista in Psicoterapia</Highlight> a indirizzo Analitico Transazionale.
           <br /><br />
 
-          Ho conseguito la <Highlight>laurea</Highlight> magistrale in <Highlight>Psicologia Clinica</Highlight> con lode presso l'Università degli Studi di Padova e, dopo l'abilitazione alla professione, la <Highlight>Specializzazione in Psicoterapia</Highlight> col massimo dei voti presso la Scuola di Specializzazione PerFormat, facente parte dell' European Association Transactional Analysis (EATA).
+          Ho conseguito la <Highlight>laurea</Highlight> magistrale in <Highlight>Psicologia Clinica</Highlight> con lode presso l'Università degli Studi di Padova e, dopo l'abilitazione alla professione, la <Highlight>Specializzazione in Psicoterapia</Highlight> col massimo dei voti presso la Scuola di Specializzazione PerFormat, affiliata all' European Association Transactional Analysis (EATA).
           <br /><br />
 
-          Nel corso della mia formazione universitaria e specialistica ho maturato significativa esperienza presso i <Highlight>Servizi di Psicologia</Highlight> ospedalieri e territoriali (ASL), occupandomi di diversi ambiti di intervento nel campo della salute mentale.
+          Nel corso della mia formazione universitaria e specialistica ho maturato significativa <Highlight>esperienza clinica</Highlight> presso i <Highlight>Servizi di Psicologia</Highlight>, occupandomi di di valutazione e trattamento anche in contesti ad elevata complessità.
           <br /><br />
 
-          Ho lavorato presso l’Ospedale ARNAS Garibaldi, prestando servizio di consulenza specialistica nel trattamento dell'obesità, dei disturbi alimentari e della gestione di patologie croniche. Ho preso parte a progetti di <Highlight>ricerca in Psicologia</Highlight>, coniugando la pratica clinica con l’interesse per la ricerca scientifica.
+          Ho lavorato presso l’Ospedale ARNAS Garibaldi, prestando servizio di consulenza specialistica nel trattamento dell'obesità, dei disturbi alimentari e della gestione psicologica di patologie croniche. Parallelamente, ho preso parte a <Highlight>progetti di ricerca in Psicologia</Highlight>, coniugando la pratica clinica con l’interesse per la ricerca scientifica.
+          <br /><br />
+
+          La scelta di dedicarmi alla psicologia nasce da un interesse profondo per il funzionamento della mente e per i processi attraverso cui l’esperienza umana si struttura, si trasforma e talvolta entra in sofferenza. Sono diventata psicoterapeuta per mettere questa comprensione al servizio della cura, attraverso un lavoro capace di incidere positivamente sulla vita delle persone.
           <br /><br />
 
           Mi dedico alla pratica psicoterapeutica e alla psicodiagnostica clinica, occupandomi di <Highlight>prevenzione, diagnosi e terapia</Highlight>.
           <br /><br />
 
-          <span className="italic">Credo fortemente nella relazione terapeutica e baso quindi il mio lavoro sulla creazione di un clima di fiducia e di alleanza, mettendo la massima cura e dedizione per il benessere dei miei pazienti.</span>
+          Credo fortemente nella <Highlight>relazione terapeutica</Highlight> e baso quindi il mio lavoro sulla creazione di un <Highlight>clima di fiducia e di alleanza</Highlight>, mettendo la massima cura e dedizione per il benessere dei miei pazienti.
 
         </div>
         <StaticImage

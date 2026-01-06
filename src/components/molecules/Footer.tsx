@@ -38,7 +38,7 @@ const Footer = () => {
               </a>
             </span>
             <p className="">
-              <b>Dove ricevo:</b> Piazza Cavour, 14, Palazzo Porto Sollima, Catania
+              <b>Dove ricevo:</b> Piazza Cavour, 14, Palazzo Porto Sollima, Catania e online
             </p>
           </div>
 
