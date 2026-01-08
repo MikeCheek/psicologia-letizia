@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '../organisms/Section';
-import services, { ServiceBlockProps } from '../../utilities/servicesInfo';
 import Book from '../atoms/Book';
+import { ServiceBlockProps, ServicesInfo } from '../../utilities/siteInfo';
 
 const ServiceBlock: React.FC<ServiceBlockProps> = ({ title, image, description, description2, reversed, id }) => {
 
@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <Section id="servizi">
       <div className="flex w-full gap-20 pt-12 flex-col items-center justify-center">
-        {services.map((service, idx) => (
+        {ServicesInfo.map((service, idx) => (
           <ServiceBlock key={idx} id={service.id} reversed={idx % 2 === 0} title={service.title} image={service.image} description={service.description} description2={service.description2} />
         ))}
       </div>

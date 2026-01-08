@@ -1,46 +1,30 @@
 import * as React from "react"
 import { Link, HeadFC, PageProps } from "gatsby"
-
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import { ParallaxProvider } from "react-scroll-parallax"
+import NavBar from "../components/molecules/NavBar"
+import Hero from "../components/molecules/Hero"
+import { StaticImage } from "gatsby-plugin-image"
+import Footer from "../components/molecules/Footer"
 
 const NotFoundPage: React.FC<PageProps> = () => {
+  const image = (
+    <StaticImage
+      // src="../images/studio/FOTO 8.jpg"
+      src="../images/studio/FOTO 3.jpeg"
+      alt="Studio"
+      quality={100}
+      placeholder="blurred"
+      objectPosition="bottom center"
+      layout="fullWidth"
+      className="w-full h-[90vh] md:h-screen object-cover"
+    />
+  )
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <ParallaxProvider>
+      <NavBar />
+      <Hero image={image} darker title="Pagina non trovata" notFound />
+      <Footer />
+    </ParallaxProvider>
   )
 }
 

@@ -1,17 +1,45 @@
+import React from 'react'
+import Highlight from '../components/atoms/Highlight'
 import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
-import Highlight from "../components/atoms/Highlight";
 
-type ServiceBlockProps = {
-  title: string;
-  description: JSX.Element;
-  description2?: JSX.Element;
-  image: JSX.Element;
-  reversed?: boolean;
-  id: string;
-};
 
-const services = [
+/* Buttons */
+export const BookText = 'Prenota un appuntamento'
+export const Navigation = {
+  "": { name: "Home", link: true },
+  // approccio: { name: "Il mio approccio", link: false },
+  analisitransazionale: { name: "Analisi Transazionale", link: true },
+  servizi: { name: "Servizi", link: true },
+  contatti: { name: "Contatti", link: false }
+}
+
+/* SU DI ME */
+export const AboutMeTitle = 'Su di me'
+export const AboutMeText = <>
+  Sono <Highlight>Specialista in Psicoterapia</Highlight> a indirizzo Analitico Transazionale.
+  <br /><br />
+
+  Ho conseguito la <Highlight>laurea</Highlight> magistrale in <Highlight>Psicologia Clinica</Highlight> con lode presso l'Università degli Studi di Padova e, dopo l'abilitazione alla professione, la <Highlight>Specializzazione in Psicoterapia</Highlight> col massimo dei voti presso la Scuola di Specializzazione PerFormat, affiliata all' European Association Transactional Analysis (EATA).
+  <br /><br />
+
+  Nel corso della mia formazione universitaria e specialistica ho maturato significativa <Highlight>esperienza clinica</Highlight> presso i <Highlight>Servizi di Psicologia</Highlight>, occupandomi di di valutazione e trattamento anche in contesti ad elevata complessità.
+  <br /><br />
+
+  Ho lavorato presso l’Ospedale ARNAS Garibaldi, prestando servizio di consulenza specialistica nel trattamento dell'obesità, dei disturbi alimentari e della gestione psicologica di patologie croniche. Parallelamente, ho preso parte a <Highlight>progetti di ricerca in Psicologia</Highlight>, coniugando la pratica clinica con l’interesse per la ricerca scientifica.
+  <br /><br />
+
+  La scelta di dedicarmi alla psicologia nasce da un interesse profondo per il funzionamento della mente e per i processi attraverso cui l’esperienza umana si struttura, si trasforma e talvolta entra in sofferenza. Sono diventata psicoterapeuta per mettere questa comprensione al servizio della cura, attraverso un lavoro capace di incidere positivamente sulla vita delle persone.
+  <br /><br />
+
+  Mi dedico alla pratica psicoterapeutica e alla psicodiagnostica clinica, occupandomi di <Highlight>prevenzione, diagnosi e terapia</Highlight>.
+  <br /><br />
+
+  Credo fortemente nella <Highlight>relazione terapeutica</Highlight> e baso quindi il mio lavoro sulla creazione di un <Highlight>clima di fiducia e di alleanza</Highlight>, mettendo la massima cura e dedizione per il benessere dei miei pazienti.
+</>
+
+/* SERVIZI */
+export const ServicesTitle = 'Servizi'
+export const ServicesInfo = [
   {
     title: "Visita psicologica e consultazione",
     description: <>
@@ -125,11 +153,82 @@ const services = [
       />
     ),
   },
-].map(service => ({
-  ...service,
-  id: service.title.replace(/\s+/g, '-').toLowerCase()
-})
-);
+].map(service => ({ ...service, id: service.title.replace(/\s+/g, '-').toLowerCase() }));
 
-export default services;
-export type { ServiceBlockProps };
+export type ServiceBlockProps = {
+  title: string;
+  description: JSX.Element;
+  description2?: JSX.Element;
+  image: JSX.Element;
+  reversed?: boolean;
+  id: string;
+};
+
+/* ANALISI TRANSAZIONALE */
+export const TransAnalysisTitle = "Analisi Transazionale"
+export const TransAnalysisBook = "Per fissare una prima visita o richiedere informazioni, contatta la dottoressa."
+export const TransAnalysisInfo = [
+  {
+    title: "Cos'è l'Analisi Transazionale?",
+    content: (
+      <>
+        L’<Highlight>Analisi Transazionale</Highlight> è un <Highlight>orientamento specialistico</Highlight> della psicoterapia che si concentra sulle <Highlight>dinamiche interpersonali</Highlight> e sul modo in cui queste influenzano il nostro benessere. Il termine “transazionale” deriva proprio dal fatto che in uno scambio comunicativo e relazionale, ciascuno riceve e dona qualcosa all’altro. La qualità della nostra vita, quindi, non dipende solo da noi, ma da ciò che abbiamo vissuto – e che viviamo oggi – in famiglia, nella coppia, nelle amicizie e sul lavoro.
+      </>
+    ),
+  },
+  {
+    title: "Schemi e Giochi Psicologici",
+    content: (
+      <>
+        La terapia analitico transazionale offre strumenti potenti e concreti per comprendere i meccanismi che generano i propri comportamenti. A volte, senza volerlo, si cade in <Highlight>giochi psicologici</Highlight>, ovvero <Highlight>schemi relazionali</Highlight> che continuano a ripetersi sempre nello stesso modo, portando a esiti insoddisfacenti. La terapia consente di riconoscere questi schemi e di riprendere il controllo, in modo più libero e consapevole.
+      </>
+    ),
+  },
+  {
+    title: "Il Lavoro Terapeutico",
+    content: (
+      <>
+        Sul ponte che si crea tra il mondo interno (o intrapsichico) e quello esterno si inserisce il lavoro terapeutico, che mira a comprendere il passato della persona e a ricostruire ciò che fa parte del suo presente.
+      </>
+    ),
+  },
+  {
+    title: "Contrattualità e Obiettivi",
+    content: (
+      <>
+        La metodologia terapeutica dell’Analisi Transazionale si fonda sulla <Highlight>contrattualità</Highlight>: la relazione terapeutica è vista come un accordo in cui specialista e paziente hanno una <Highlight>responsabilità congiunta</Highlight> nel raggiungere <Highlight>obiettivi di terapia chiari</Highlight>.
+      </>
+    ),
+  },
+  {
+    title: "Un Approccio Flessibile",
+    content: (
+      <>
+        Questo approccio terapeutico agisce, su tutti i domini del funzionamento psichico: cognitivo, comportamentale, affettivo e relazionale, adattandosi in maniera flessibile a seconda delle caratteristiche del paziente e del suo problema. Questo consente di effettuare una terapia mirata, finalizzata alla <Highlight>remissione dei sintomi</Highlight>, ma anche di curare gli aspetti più profondi e intrapsichici attraverso una <Highlight>ristrutturazione</Highlight> del proprio modo di <Highlight>sentire, agire e pensare</Highlight>.
+      </>
+    ),
+  },
+]
+
+/* APPROCCIO */
+export const ApproachTitle = 'Il mio approccio'
+export const ApproachSteps = [
+  <><Highlight>La persona al centro:</Highlight> accoglienza, attenzione e cura.</>,
+  <><Highlight>Intervento clinico specialistico</Highlight> e personalizzato.</>,
+  <><Highlight>Utilizzo di tecniche integrate</Highlight> per l'efficacia clinica.</>,
+  <><Highlight>Promozione dell'autonomia</Highlight> e del cambiamento.</>,
+]
+
+/* CONTATTI */
+export const ContactsTitle = 'Contatti'
+export const ContactsName = 'Dott.ssa Letizia Puglisi'
+export const ContactsJobTitle = 'Psicoterapeuta'
+export const ContactsInfo1 = 'Ordine degli Psicologi n. 10702'
+export const ContactsInfo2 = 'Partita IVA: 06074890879'
+export const ContactsAddress = <><b>Dove ricevo:</b> Piazza Cavour, 14, Palazzo Porto Sollima, Catania e online</>
+export const ContactsCopyrightText = 'Questo sito internet rispetta la linea guida nazionale del CNOP in materia di pubblicità sanitaria, secondo gli artt. 39-40 del Codice Deontologico degli Psicologi.'
+
+export const phoneNumber = '+39 3475777357'
+export const email = 'studiopsicologiapuglisi@gmail.com'
+
+export const filteredNumber = phoneNumber.replace(/\D/g, '')

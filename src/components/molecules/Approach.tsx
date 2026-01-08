@@ -8,46 +8,19 @@ import {
   ArrowUpRight,
 } from 'lucide-react'
 import { StaticImage } from 'gatsby-plugin-image'
+import { ApproachSteps, ApproachTitle } from '../../utilities/siteInfo'
 
-const steps = [
-  {
-    icon: Smile,
-    text: (
-      <>
-        <Highlight>La persona al centro:</Highlight> accoglienza, attenzione e cura.
-      </>
-    ),
-  },
-  {
-    icon: UserPlus,
-    text: (
-      <>
-        <Highlight>Intervento clinico specialistico</Highlight> e personalizzato.
-      </>
-    ),
-  },
-  {
-    icon: Layers,
-    text: (
-      <>
-        <Highlight>Utilizzo di tecniche integrate</Highlight> per l'efficacia clinica.
-      </>
-    ),
-  },
-  {
-    icon: ArrowUpRight,
-    text: (
-      <>
-        <Highlight>Promozione dell'autonomia</Highlight> e del cambiamento.
-      </>
-    ),
-  },
-]
+const steps = ApproachSteps.map((text, idx) => {
+  const icons = [Smile, UserPlus, Layers, ArrowUpRight];
+  const Icon = icons[idx];
+  return {
+    icon: Icon,
+    text: text,
+  };
+});
 
 const Approach: React.FC = () => (
-  <Section id="approccio">
-    <h3 className="text-2xl md:text-4xl font-bold mb-12 text-purple uppercase">
-      Il mio approccio</h3>
+  <Section id="approccio" title={ApproachTitle}>
     <div className="relative flex flex-col lg:flex-row-reverse gap-20 items-center">
       <StaticImage
         src="../../images/foto-studio.jpg"

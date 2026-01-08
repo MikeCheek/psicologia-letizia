@@ -7,6 +7,7 @@ import { ParallaxProvider } from "react-scroll-parallax"
 import Services from "../components/molecules/Services"
 import Seo from "../components/atoms/Seo"
 import { StaticImage } from "gatsby-plugin-image"
+import { ServicesTitle } from "../utilities/siteInfo"
 
 const ServicesPage: React.FC<PageProps> = () => {
 
@@ -25,7 +26,7 @@ const ServicesPage: React.FC<PageProps> = () => {
 
   return (<ParallaxProvider>
     <NavBar />
-    <Hero title="Servizi" image={image} darker />
+    <Hero title={ServicesTitle} image={image} darker />
     <Services />
     <Footer />
   </ParallaxProvider>

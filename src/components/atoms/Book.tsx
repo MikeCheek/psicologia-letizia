@@ -1,13 +1,11 @@
 import { Mail, MessageCircle } from 'lucide-react';
 import React from 'react'
 import { useState } from 'react';
-import { email, filteredNumber } from '../../utilities/contacts'
+import { BookText, email, filteredNumber } from '../../utilities/siteInfo';
 
 const Book = () => {
   const [hovered, setHovered] = useState(false);
   const [supportsHover, setSupportsHover] = useState(false);
-
-
 
   React.useEffect(() => {
     if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return;
@@ -32,7 +30,7 @@ const Book = () => {
       onMouseLeave={supportsHover ? () => setHovered(false) : undefined}
     >
       <a title="Prenota una consulenza" href="#contatti" className="inline-block p-3 text-center">
-        Prenota un appuntamento
+        {BookText}
       </a>
       <span
         className={`inline-flex items-center ml-3 origin-left transform overflow-hidden transition-[max-width,opacity,transform] duration-300 ${(supportsHover && hovered) ? 'max-w-[96px] opacity-100 scale-100' : 'max-w-0 opacity-0 scale-0 pointer-events-none'}`}

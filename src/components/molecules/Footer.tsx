@@ -1,6 +1,6 @@
 import React from 'react'
-import { email, filteredNumber, phoneNumber } from '../../utilities/contacts'
 import { MessageCircle } from 'lucide-react'
+import { ContactsAddress, ContactsCopyrightText, ContactsInfo1, ContactsInfo2, ContactsName, email, filteredNumber, phoneNumber } from '../../utilities/siteInfo'
 
 const Footer = () => {
   return (
@@ -9,9 +9,9 @@ const Footer = () => {
         <h3 className="text-2xl md:text-4xl font-bold mb-12 text-center text-white uppercase">Contatti</h3>
         <div className="w-full text-lg max-w-[80%] mx-auto px-4 flex flex-col md:flex-row justify-evenly items-start md:items-center gap-4">
           <div className="text-white text-left gap-2 flex flex-col">
-            <p className="italic font-bold">Dott.ssa Letizia Puglisi</p>
-            <p className="italic">Ordine degli Psicologi n. 10702</p>
-            <p className="">Partita IVA: 06074890879</p>
+            <p className="italic font-bold">{ContactsName}</p>
+            <p className="italic">{ContactsInfo1}</p>
+            <p className="">{ContactsInfo2}</p>
           </div>
           <div className="text-white text-left flex flex-col gap-2 md:max-w-[35vw]">
             <span className="flex flex-row items-center flex-wrap gap-2 w-full">
@@ -38,7 +38,7 @@ const Footer = () => {
               </a>
             </span>
             <p className="">
-              <b>Dove ricevo:</b> Piazza Cavour, 14, Palazzo Porto Sollima, Catania e online
+              {ContactsAddress}
             </p>
           </div>
 
@@ -54,31 +54,14 @@ const Footer = () => {
             <img src="https://cdn.simpleicons.org/youtube/ffffff" alt="YouTube" width={25} height={25} />
           </a>
         </div> */}
-        {/* <div className="text-white text-left w-full md:w-1/3">
-          <p className="text-sm mb-2">Subscribe to Get My Newsletter</p>
-          <form className="flex">
-            <input
-              type="email"
-              placeholder="Enter your email here"
-              className="px-2 py-1 rounded-l bg-white text-blue outline-none w-full"
-            />
-            <button
-              type="submit"
-              className="px-4 py-1 bg-white text-blue font-semibold rounded-r border-l border-blue"
-            >
-              Join
-            </button>
-          </form>
-          <p className="text-xs mt-2">Thanks for submitting!</p>
-        </div> */}
       </div>
       <div className="w-full max-w-6xl mx-auto px-4 mt-24">
         <div className="text-center text-white">
           <p className="text-base">
-            © {new Date().getFullYear()} Dott.ssa Letizia Puglisi
+            © {new Date().getFullYear()} {ContactsName}
           </p>
           <p className="text-sm mt-2">
-            Questo sito internet rispetta la linea guida nazionale del CNOP in materia di pubblicità sanitaria, secondo gli artt. 39-40 del Codice Deontologico degli Psicologi.
+            {ContactsCopyrightText}
           </p>
         </div>
       </div>

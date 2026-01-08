@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 interface SectionProps {
   id?: string;
   children: React.ReactNode;
+  title?: string;
 }
 
 type Edge = "left" | "right";
@@ -22,6 +23,7 @@ type ShapeItem = {
 const Section: React.FC<SectionProps> = ({
   id = "psicologiaclinica",
   children,
+  title
 }) => {
   const sectionRef = React.useRef<HTMLElement | null>(null);
   const [rect, setRect] = React.useState({ width: 0, height: 0 });
@@ -99,6 +101,14 @@ const Section: React.FC<SectionProps> = ({
       ref={sectionRef}
       className="relative w-full min-h-[70vh] px-[10%] flex flex-col items-center justify-center text-black py-20 gap-12 overflow-hidden"
     >
+      {title ? (
+        <div className="flex flex-col items-center mb-12">
+          <h3 className="text-3xl md:text-[2.5rem] font-semibold text-purple uppercase tracking-tighter text-center">
+            {title}
+          </h3>
+          <div className="h-1 w-24 bg-lightBlue mt-4 rounded-full" />
+        </div>
+      ) : null}
 
       {children}
 

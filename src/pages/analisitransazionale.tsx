@@ -5,6 +5,7 @@ import TransAnalysis from '../components/molecules/TransAnalysis'
 import Hero from '../components/molecules/Hero'
 import NavBar from '../components/molecules/NavBar'
 import { StaticImage } from 'gatsby-plugin-image'
+import { TransAnalysisTitle } from '../utilities/siteInfo'
 
 const AnalisiTransazionale = () => {
   const image = (
@@ -22,7 +23,7 @@ const AnalisiTransazionale = () => {
   return (
     <ParallaxProvider>
       <NavBar />
-      <Hero title="Analisi Transazionale" image={image} darker />
+      <Hero title={TransAnalysisTitle} image={image} darker />
       <TransAnalysis />
       <Footer />
     </ParallaxProvider>

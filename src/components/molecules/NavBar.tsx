@@ -1,15 +1,8 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import NavItem from '../atoms/NavItem'
+import { Navigation } from '../../utilities/siteInfo'
 
 const NavBar = () => {
-  const sections = {
-    "": { name: "Home", link: true },
-    // approccio: { name: "Il mio approccio", link: false },
-    analisitransazionale: { name: "Analisi Transazionale", link: true },
-    servizi: { name: "Servizi", link: true },
-    contatti: { name: "Contatti", link: false }
-  }
   const [open, setOpen] = React.useState(false)
 
   return (
@@ -27,7 +20,7 @@ const NavBar = () => {
         </a> */}
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-between items-center gap-10 px-8">
-          {Object.entries(sections).map(([key, value]) => (
+          {Object.entries(Navigation).map(([key, value]) => (
             <NavItem key={key} href={key} value={value.name} link={value.link} />
           ))}
         </div>
@@ -47,7 +40,7 @@ const NavBar = () => {
              z-[998] ${open ? "translate-x-0" : "translate-x-full"
             } md:hidden  flex flex-col pt-24 px-4 gap-6`}
         >
-          {Object.entries(sections).map(([key, value]) => (
+          {Object.entries(Navigation).map(([key, value]) => (
             <NavItem
               key={key}
               href={key}

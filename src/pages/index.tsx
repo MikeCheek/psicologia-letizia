@@ -7,7 +7,6 @@ import AboutMe from "../components/molecules/AboutMe"
 import { ParallaxProvider } from "react-scroll-parallax"
 import Approach from "../components/molecules/Approach"
 import Seo from "../components/atoms/Seo"
-import TransAnalysis from "../components/molecules/TransAnalysis"
 import ShortServices from "../components/molecules/ShortServices"
 import { StaticImage } from "gatsby-plugin-image"
 
