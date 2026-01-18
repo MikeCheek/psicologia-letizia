@@ -19,10 +19,10 @@ export const AboutMeText = <>
   Sono <Highlight>Specialista in Psicoterapia</Highlight> a indirizzo Analitico Transazionale.
   <br /><br />
 
-  Ho conseguito la <Highlight>laurea</Highlight> magistrale in <Highlight>Psicologia Clinica</Highlight> con lode presso l'Università degli Studi di Padova e, dopo l'abilitazione alla professione, la <Highlight>Specializzazione in Psicoterapia</Highlight> col massimo dei voti presso la Scuola di Specializzazione PerFormat, affiliata all' European Association Transactional Analysis (EATA).
+  Ho conseguito la <Highlight>laurea</Highlight> magistrale in <Highlight>Psicologia Clinica</Highlight> con lode presso l'Università degli Studi di Padova e, dopo l'abilitazione alla professione, la <Highlight>Specializzazione in Psicoterapia</Highlight> col massimo dei voti presso la Scuola di Specializzazione PerFormat, affiliata alla European Association Transactional Analysis (EATA).
   <br /><br />
 
-  Nel corso della mia formazione universitaria e specialistica ho maturato significativa <Highlight>esperienza clinica</Highlight> presso i <Highlight>Servizi di Psicologia</Highlight>, occupandomi di di valutazione e trattamento anche in contesti ad elevata complessità.
+  Nel corso della mia formazione universitaria e specialistica ho maturato significativa <Highlight>esperienza clinica</Highlight> presso i <Highlight>Servizi di Psicologia</Highlight>, occupandomi di valutazione e trattamento anche in contesti ad elevata complessità.
   <br /><br />
 
   Ho lavorato presso l’Ospedale ARNAS Garibaldi, prestando servizio di consulenza specialistica nel trattamento dell'obesità, dei disturbi alimentari e della gestione psicologica di patologie croniche. Parallelamente, ho preso parte a <Highlight>progetti di ricerca in Psicologia</Highlight>, coniugando la pratica clinica con l’interesse per la ricerca scientifica.
@@ -49,7 +49,7 @@ export const ServicesInfo = [
       <ul>
         <li> Esplorare pensieri, emozioni e comportamenti </li>
         <li> Chiarire la natura del problema e, se necessario, avere un primo inquadramento diagnostico</li>
-        <li> Ricevere l’indicazione terapeutica più appropriata: l'avvio di un percorso di psicoterapia, un intervento circoscritto, oppure un invio ad altro professionista </li>
+        <li> Ricevere l’indicazione terapeutica più appropriata: l'avvio di un percorso di psicoterapia, un intervento circoscritto, oppure un invio ad altro specialista. </li>
       </ul>
       <br />
       La valutazione iniziale fornisce un'<Highlight>opportunità</Highlight> strutturata per fare <Highlight>chiarezza</Highlight> sulla propria situazione e delineare le <Highlight>possibili vie d'intervento</Highlight>.
@@ -77,7 +77,7 @@ export const ServicesInfo = [
       <Highlight bigger h4>Cosa include il servizio?</Highlight><br />
       Il processo psicodiagnostico si articola in diverse fasi, che possono includere:
       <ul>
-        <li><Highlight>Colloquio clinico:</Highlight> un'analisi dettagliata della storia clinica, sintomi attuali e impatto sulla vita quotidiana.</li>
+        <li><Highlight>Colloquio clinico:</Highlight> un'analisi dettagliata della storia clinica, dei sintomi attuali e dell'impatto sulla vita quotidiana.</li>
         <li><Highlight>Strumenti diagnostici:</Highlight> la somministrazione di test psicologici e psicometrici validati. Questi strumenti supportano la diagnosi differenziale e offrono una misurazione oggettiva di specifici aspetti del funzionamento psicologico. Gli accertamenti testologici, uniti al colloquio clinico, consentono di ottenere un quadro diagnostico più preciso e completo.</li>
         <li><Highlight>Refertazione:</Highlight> rilascio di relazioni cliniche con restituzione degli esiti.</li>
       </ul>
