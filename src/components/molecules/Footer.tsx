@@ -1,6 +1,7 @@
 import React from 'react'
 import { MessageCircle } from 'lucide-react'
 import { ContactsAddress, ContactsCopyrightText, ContactsInfo1, ContactsInfo2, ContactsName, email, filteredNumber, phoneNumber } from '../../utilities/siteInfo'
+import { Link } from 'gatsby'
 
 const Footer = () => {
   return (
@@ -57,12 +58,15 @@ const Footer = () => {
       </div>
       <div className="w-full max-w-6xl mx-auto px-4 mt-24">
         <div className="text-center text-white">
-          <p className="text-base">
-            © {new Date().getFullYear()} {ContactsName}
-          </p>
           <p className="text-sm mt-2">
             {ContactsCopyrightText}
           </p>
+          <span className="text-base flex flex-row justify-center items-center gap-2 mt-2">
+            <p>© {new Date().getFullYear()} {ContactsName} - </p>
+            <Link to="/privacy" className="text-sm text-white underline hover:opacity-80 block text-center">
+              Privacy Policy
+            </Link>
+          </span>
         </div>
       </div>
 
